@@ -77,7 +77,7 @@
 #
 # 1.  Define a function named `tax_calculator` that takes two parameters: `bill` and `tax_rate`.
 # 2.  Inside the function, calculate the total amount owed (`bill * tax_rate`).
-# 3.  The function should **`return`** the calculated area.
+# 3.  The function should **`return`** the calculated total.
 # 4.  Call the function with `bill=1786` and `tax_rate=1.2` and print the result.
 
 # >>> Your code here

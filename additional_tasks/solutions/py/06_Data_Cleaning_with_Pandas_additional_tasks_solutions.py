@@ -88,6 +88,10 @@ assert nan_non_headers == genuine_missing == 13179
 assert missing_prices_incl_headers == nan_from_headers + nan_non_headers
 
 # --- MISMATCH FLAG (STRETCH_GOALS.md, Module 6, task 6.3) ---------------
+# Note: STRETCH_GOALS.md is not included in this course package - this
+# flag documents a discrepancy noticed against an external answer-key
+# document at authoring time; it is preserved here as a correctness note,
+# not a claim that the file ships alongside these solutions.
 # STRETCH_GOALS.md's checkable line reads: "13,179 total missing prices
 # after coercion, of which 3,875 are the headers, so 9,304 are genuine".
 # Running the actual data shows this arithmetic does not hold:
@@ -114,6 +118,8 @@ assert duplicates_removed == 48678
 assert after_dedupe == 33395
 
 # --- MISMATCH FLAG (STRETCH_GOALS.md, Module 6, task 6.3) ---------------
+# Note: STRETCH_GOALS.md is not included in this course package - see the
+# note on the first mismatch flag above.
 # STRETCH_GOALS.md's checkable line also states "52,552 duplicated rows
 # disappear on dedupe". That figure only reproduces if drop_duplicates()
 # is run on the RAW file while the 3,875 embedded header rows are still

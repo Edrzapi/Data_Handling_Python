@@ -79,13 +79,13 @@ print(f"User Profile: {user_profile}")
 # 3. Access and print 'city'
 print(f"Alice's city: {user_profile['city']}")
 
-# Access and print 'Alice's 2nd orderID
+# 4. Access and print Alice's 2nd orderID
 print(f"Alice's 2nd orderID: {user_profile['orderID'][1]}")
 
 # ----------------------------------------------------------------
 # Exercise 3.2: Modifying a Dictionary
 # ----------------------------------------------------------------
-# The dictionary from the previous exercise: user_profile = {'name': 'Alice', 'age': 30, 'city': 'New York'}
+# The dictionary from the previous exercise: user_profile = {'name': 'Alice', 'city': 'New York', 'orderID': [100123, 100394]}
 
 # 1. Add a new key-value pair
 user_profile['is_active'] = True

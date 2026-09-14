@@ -74,7 +74,7 @@
 #       * `'orderID'`: `[100123, 100394]` (int)
 #
 # 2.  Print the entire `user_profile` dictionary.
-# 3.  Access and print the value associated with the key `'age'`.
+# 3.  Access and print the value associated with the key `'city'`.
 # 4. Access and print the 2nd value of the orderID `'orderID'`.
 
 # >>> Your code here

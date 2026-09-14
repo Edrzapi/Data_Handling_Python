@@ -93,9 +93,10 @@ def fahrenheit_to_celsius(fahrenheit):
     # 3. Return Celsius
     return celsius
 
-# 4. Call the function and print
-fahrenheit_temp = 100
-fahrenheit_to_celsius(fahrenheit_temp)
+# 4. Call the function and print, rounded to one decimal place
+fahrenheit_temp = 32
+celsius_result = round(fahrenheit_to_celsius(fahrenheit_temp), 1)
+print(f"{fahrenheit_temp}F is {celsius_result}C")
 
 # ----------------------------------------------------------------
 # Advanced: Function with Conditional Logic
@@ -122,7 +123,7 @@ print(f"Task 2 status: {get_status(task2)}")
 # ----------------------------------------------------------------
 # 1. Define the content
 file_content = "Hello Python World!\nThis is line two."
-print('file_content')
+print(file_content)
 # 2. and 3. Open in write mode and write content
 f = open('output.txt', 'w')
 f.write(file_content)

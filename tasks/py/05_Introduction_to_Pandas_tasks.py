@@ -96,7 +96,7 @@
 
 # >>> Your code here
 
-# ### Exercise 3.2: Filtering using Multiple Columns, to create a flagged dataframe
+# ### Exercise 3.4: Filtering using Multiple Columns, to create a flagged dataframe
 #
 # 1. Filter dataframe of people who have:
 # 2. `Default = 1` , remember to use `==` as an evaluater

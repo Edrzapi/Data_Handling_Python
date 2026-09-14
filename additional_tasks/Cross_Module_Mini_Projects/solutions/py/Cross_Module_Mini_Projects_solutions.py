@@ -139,6 +139,10 @@ print("MP2: class means (after full clean, incl. dedupe):\n", class_means)
 assert class_means.idxmax() == 'Cama G. Clase'  # consistently priciest, as expected
 
 # --- MISMATCH FLAG (STRETCH_GOALS.md, Cross-module MP2) -----------------
+# Note: STRETCH_GOALS.md is not included in this course package - this
+# flag documents a discrepancy noticed against an external answer-key
+# document at authoring time; it is preserved as a correctness note, not
+# a claim that the file ships alongside these solutions.
 # STRETCH_GOALS.md's checkable line for MP2 states: "class means: Cama G.
 # Clase about 133, Preferente about 83, Turista about 70". Running the
 # full pipeline as MP2 itself specifies it (header rows removed, price
@@ -221,6 +225,8 @@ ordered_share = wants_to_lose_share.reindex(genhlth_order)
 print("MP3: ordered by health (best to worst):\n", ordered_share)
 
 # --- MISMATCH FLAG (STRETCH_GOALS.md, Cross-module MP3) -----------------
+# Note: STRETCH_GOALS.md is not included in this course package - see the
+# note on the MP2 mismatch flag above.
 # STRETCH_GOALS.md's checkable line claims "the share wanting to lose
 # weight rises as genhlth worsens". The actual data only partly bears
 # this out: it rises from 'excellent' (0.559) up through 'good' (0.669),

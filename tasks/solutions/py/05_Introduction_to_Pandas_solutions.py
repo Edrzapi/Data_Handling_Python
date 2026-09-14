@@ -47,14 +47,14 @@ cdc_df['height_weight_ratio'] = cdc_df['height'] / cdc_df['weight']
 display(cdc_df.head())
 
 # ----------------------------------------------------------------
-# Exercise 2.1: Loading `cdc.csv` and Setting an Index
+# Exercise 2.2: Filtering for categorical values
 # ----------------------------------------------------------------
 #filter rows to only include very good
 vgood_df = cdc_df[cdc_df['genhlth'] == 'very good']
 poor_df = cdc_df[cdc_df['genhlth'] == 'poor']
 
 # ----------------------------------------------------------------
-# Exercise 2.1: Loading `cdc.csv` and Setting an Index
+# Exercise 2.3: Creating new calculated columns
 # ----------------------------------------------------------------
 #print the mean of height_weight_ratio
 print(vgood_df['height_weight_ratio'].mean())
@@ -84,7 +84,7 @@ filtered_df = indexed_df[indexed_df['Debt']!=0]
 display(filtered_df)
 
 # ----------------------------------------------------------------
-# Exercise 3.2: Filtering using Multiple Columns, to create a flagged dataframe
+# Exercise 3.4: Filtering using Multiple Columns, to create a flagged dataframe
 # ----------------------------------------------------------------
 flagged_df = filtered_df[(filtered_df['Default'] == 1) & (filtered_df['Income'] < 25000)]
 display(flagged_df)

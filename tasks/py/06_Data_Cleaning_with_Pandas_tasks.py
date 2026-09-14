@@ -70,7 +70,7 @@
 
 # ## Inspect rows with missing values
 #
-#  2.3 Filter the DataFrame to display rows with **any** missing values to understand their structure. Use `df.isnull()` chain to `.any(axis=)`
+#  2.2 Filter the DataFrame to display rows with **any** missing values to understand their structure. Use `df.isnull()` chain to `.any(axis=)`
 #
 # > **Tip:** `axis=1` makes `.any()` look **across each row** (is there a missing value in any column of this row?), rather than down each column.
 

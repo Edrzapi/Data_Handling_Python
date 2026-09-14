@@ -54,7 +54,7 @@ renfe_df.info()
 renfe_df.isnull().sum()
 
 # ----------------------------------------------------------------
-# 2.3 Filter the DataFrame to display rows with any missing values to understand their structure. U...
+# 2.2 Filter the DataFrame to display rows with any missing values to understand their structure. U...
 # ----------------------------------------------------------------
 display(renfe_df[renfe_df.isnull().any(axis=1)])
 
@@ -107,7 +107,7 @@ renfe_df['tax'] = renfe_df['price'] * 0.20  # line reassembled: the notebook sol
 display(renfe_df.head())
 
 # ----------------------------------------------------------------
-# 4.2 Compute the tax amount for each price, assuming a 20% VAT rate was already included in price....
+# Advanced: cap tax at £40 for high values
 # ----------------------------------------------------------------
 renfe_df.loc[renfe_df['tax'] > 40, 'tax'] = 40
 display(renfe_df['tax'].sort_values(ascending=False))
