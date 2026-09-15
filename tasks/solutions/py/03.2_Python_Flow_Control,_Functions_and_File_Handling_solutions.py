@@ -99,6 +99,39 @@ celsius_result = round(fahrenheit_to_celsius(fahrenheit_temp), 1)
 print(f"{fahrenheit_temp}F is {celsius_result}C")
 
 # ----------------------------------------------------------------
+# Exercise 3.3: Handling Errors with `try`/`except`
+# ----------------------------------------------------------------
+# 1. and 2. Define divide() with try/except
+def divide(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        # 3. Return a message rather than crashing
+        return "Cannot divide by zero"
+
+
+# 4. Test both paths
+print(divide(10, 2))   # 5.0
+print(divide(10, 0))   # Cannot divide by zero
+
+
+# 5. and 6. Define read_file_safely() with try/except
+def read_file_safely(filename):
+    try:
+        f = open(filename, 'r')
+        contents = f.read()
+        f.close()
+        return contents
+    except FileNotFoundError:
+        # 7. Return a message rather than the raw traceback
+        return "File not found."
+
+
+# 8. Same function, two filenames - one exists, one does not
+print(read_file_safely('data/data.txt'))
+print(read_file_safely('data/no_such_file.txt'))
+
+# ----------------------------------------------------------------
 # Advanced: Function with Conditional Logic
 # ----------------------------------------------------------------
 # 1. Define the function

@@ -75,42 +75,7 @@ assert promo_result == "Only valid on specified journey"
 assert business_result == "Unknown fare"
 
 # ----------------------------------------------------------------
-# Additional Task 3.3: Try/Except - Calculator and File Opening (Challenge)
-# ----------------------------------------------------------------
-# Part 1: Calculator - handle division by zero
-def divide(a, b):
-    try:
-        return a / b
-    except ZeroDivisionError:
-        return "Cannot divide by zero"
-
-
-print(divide(10, 2))   # 5.0
-print(divide(10, 0))   # Cannot divide by zero
-
-assert divide(10, 2) == 5.0
-assert divide(10, 0) == "Cannot divide by zero"
-
-
-# Part 2: File opening - handle a missing file
-def read_file_safely(filename):
-    try:
-        f = open(filename, 'r')
-        contents = f.read()
-        f.close()
-        return contents
-    except FileNotFoundError:
-        return "File not found."
-
-
-print(read_file_safely('data/data.txt'))          # the file's contents
-print(read_file_safely('data/no_such_file.txt'))  # File not found.
-
-assert read_file_safely('data/data.txt') == open('data/data.txt').read()
-assert read_file_safely('data/no_such_file.txt') == "File not found."
-
-# ----------------------------------------------------------------
-# Additional Task 3.4: Folder audit (Challenge)
+# Additional Task 3.3: Folder audit (Challenge)
 # ----------------------------------------------------------------
 import os
 

@@ -91,6 +91,42 @@
 
 # >>> Your code here
 
+# ### Exercise 3.3: Handling Errors with `try`/`except`
+#
+# So far, a bad input has crashed the program. `try`/`except` lets you catch a
+# specific error and carry on instead. (Other languages call this `try`/`catch`;
+# Python's keyword is `except`.)
+#
+# ```
+# try:
+#     risky_thing()
+# except SomeErrorType:
+#     handle_it_instead()
+# ```
+#
+# **Part 1: a calculator that survives division by zero**
+#
+# 1.  Define a function named `divide` that takes two parameters: `a` and `b`.
+# 2.  Inside the function, `return a / b` - but wrap it in a `try`/`except` that
+#     catches `ZeroDivisionError`.
+# 3.  When `b` is `0`, return the string `"Cannot divide by zero"` instead of
+#     letting the program crash.
+# 4.  Test it with `divide(10, 2)` and `divide(10, 0)`.
+#
+# **Part 2: opening a file that might not be there**
+#
+# 5.  Define a function named `read_file_safely` that takes one parameter:
+#     `filename`.
+# 6.  Inside the function, `open()` the file and `read()` it - wrapped in a
+#     `try`/`except` that catches `FileNotFoundError`.
+# 7.  On success, return the file's contents. On failure, return the string
+#     `"File not found."` instead of the raw traceback.
+# 8.  Test it with `'data/data.txt'` (which exists) and
+#     `'data/no_such_file.txt'` (which does not), changing nothing but the
+#     filename.
+
+# >>> Your code here
+
 # ### **Advanced**: Function with Conditional Logic
 #
 # 1.  Define a function named `get_status` that takes one parameter: `data` (which is expected to be a dictionary with a `'status'` key).

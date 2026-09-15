@@ -50,39 +50,7 @@
 
 # >>> Your code here
 
-# ## Additional Task 3.3: Try/Except - Calculator and File Opening (Challenge)
-#
-# Extends Module 3 exercises - exception handling with try/except, on top
-# of the file handling and functions already covered.
-#
-# Python calls this try/except (not "try/catch" - that's the Java/C#/
-# JavaScript name for the same idea). Put the risky line in the try block;
-# if that specific error happens, Python jumps to the matching except
-# block instead of crashing the program:
-#
-#     try:
-#         risky_thing()
-#     except SomeErrorType:
-#         handle_it_instead()
-#
-# Part 1: Calculator - handle division by zero
-# 1. Write a function divide(a, b) that returns a / b.
-# 2. Wrap the division in a try/except that catches ZeroDivisionError.
-#    When b is 0, return the string "Cannot divide by zero" instead of
-#    letting the program crash.
-# 3. Test it with (10, 2) and (10, 0).
-#
-# Part 2: File opening - handle a missing file
-# 4. Write a function read_file_safely(filename) that opens and reads it.
-#    Wrap the open()/read() in a try/except that catches FileNotFoundError.
-#    On success, return the file's contents; on failure, return the
-#    string "File not found." instead of the raw traceback.
-# 5. Test it once against 'data/data.txt' (exists) and once against
-#    'data/no_such_file.txt' (doesn't), changing nothing but the filename.
-
-# >>> Your code here
-
-# ## Additional Task 3.4: Folder audit (Challenge)
+# ## Additional Task 3.3: Folder audit (Challenge)
 #
 # Extends Module 3 exercises - os.listdir, dictionaries, file writing.
 #
